@@ -17,7 +17,15 @@
         <span id="h">H</span>:<span id="m">M</span>:<span id="s">S</span>
     </div>
     <footer><h5>&#169; a Purujit Gupta project</h5></footer>
-
+ <script>
+        const TimeObj = new Date;
+        const localTime = TimeObj.toLocaleTimeString();
+        const [H, M, S] = localTime.split(':')
+        console.log(H, M, S)
+        document.getElementById("seconds").innerHTML = S
+        document.getElementById("minutes").innerHTML = M
+        document.getElementById("hours").innerHTML = H
+    </script>
     <script src="app.js" charset="UTF-8"></script>
 </body>
 </html>
